@@ -103,4 +103,16 @@ p {
   display: none;
 }
 
+.shortHr{ 
+  display: block; 
+  height: 1px;
+    border: 0; 
+    border-top: 2px solid white;
+    margin: 1em 0; padding: 0; 
+    width: 25%;
+    text-align:left;
+    margin-left:0
+  }
+
+
 @import "node_modules/bootstrap/scss/bootstrap";

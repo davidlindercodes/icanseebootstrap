@@ -90,6 +90,17 @@ p {
   display: none;
 }
 
+.shortHr {
+  height: 1px;
+  border: 0;
+  border-top: 2px solid white;
+  margin: 1em 0;
+  padding: 0;
+  width: 25%;
+  text-align: left;
+  margin-left: 0;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
