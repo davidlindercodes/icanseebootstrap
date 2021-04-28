@@ -58,6 +58,10 @@ p {
   background: #f6f7ff;
 }
 
+.closeBtn:hover {
+  cursor: pointer;
+}
+
 .storyImg {
   padding: 5px;
   position: relative;
