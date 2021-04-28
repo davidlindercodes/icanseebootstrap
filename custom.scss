@@ -131,6 +131,38 @@ p {
   border-radius: 10px;
 }
 
+.imgBg {
+  background-color:#F6F7FF;
+  border-radius:50%; 
+  height: 50px; 
+  width: 50px;
+  text-align: center;
+  z-index: 1;
+}
 
+/* The timeline (the vertical ruler) */
+.milestones {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The timeline (the vertical ruler) */
+.milestones::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #F6F7FF;
+  top: 20%;
+  bottom: 5%;
+  left: 20%;
+  margin-left: -3px;
+    z-index: 0;
+}
+
+.reminder {
+  border-right: 5px solid #3023ae;
+  border-radius: 10px;
+}
 
 @import "node_modules/bootstrap/scss/bootstrap";
