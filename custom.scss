@@ -10,6 +10,7 @@ $theme-colors: (
 $gradient: linear-gradient(to bottom right, #3023ae, #c86dd7);
 $blue: #2579ff;
 
+
 html {
   font-family: Rubik !important;
 }
@@ -58,8 +59,13 @@ p {
   cursor: pointer;
 }
 
-.card-header:hover {
+// .card-header:hover {
+//     cursor: pointer;
+// }
+
+.hover:hover {
     cursor: pointer;
+    background: #f6f7ff;
 }
 
 .storyImg {
@@ -138,13 +144,27 @@ p {
   width: 50px;
   text-align: center;
   z-index: 1;
+  :hover{
+  height: 55px; 
+  width: 55px;
+  animation: rotate 2s 1;
+  cursor: pointer;
 }
+}
+
+@keyframes rotate {
+  100% {transform: rotate(360deg);}
+
+}
+
+
 
 /* The timeline (the vertical ruler) */
 .milestones {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 /* The timeline (the vertical ruler) */

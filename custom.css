@@ -48,8 +48,9 @@ p {
   cursor: pointer;
 }
 
-.card-header:hover {
+.hover:hover {
   cursor: pointer;
+  background: #f6f7ff;
 }
 
 .storyImg {
@@ -122,7 +123,18 @@ p {
   text-align: center;
   z-index: 1;
 }
+.imgBg :hover {
+  height: 55px;
+  width: 55px;
+  animation: rotate 2s 1;
+  cursor: pointer;
+}
 
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* The timeline (the vertical ruler) */
 .milestones {
   position: relative;

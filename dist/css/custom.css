@@ -52,8 +52,9 @@ p {
   cursor: pointer;
 }
 
-.card-header:hover {
+.hover:hover {
   cursor: pointer;
+  background: #f6f7ff;
 }
 
 .storyImg {
@@ -125,6 +126,28 @@ p {
   width: 50px;
   text-align: center;
   z-index: 1;
+}
+
+.imgBg :hover {
+  height: 55px;
+  width: 55px;
+  -webkit-animation: rotate 2s 1;
+          animation: rotate 2s 1;
+  cursor: pointer;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /* The timeline (the vertical ruler) */
