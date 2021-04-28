@@ -3,8 +3,15 @@ function hideAlert() {
 }
 
 function showMore() {
-document.getElementById("showMore").innerHTML = "<b>Show Less</b>";
-document.querySelector(".more").classList.toggle("hide");
+document.querySelector(".showMore").classList.add("hide");
+document.querySelector(".more").classList.remove("hide");
+document.querySelector(".showLess").classList.remove("hide");
+}
+
+function showLess() {
+  document.querySelector(".more").classList.add("hide");
+  document.querySelector(".showLess").classList.add("hide");
+  document.querySelector(".showMore").classList.remove("hide");
 }
 
 
