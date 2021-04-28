@@ -202,9 +202,24 @@ input#search {
   border-radius: 25px;
 }
 
+@media screen and (max-width: 1200px) {
+  .milestones::after {
+    left: 24%;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  .milestones::after {
+    left: 34%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .seperator {
     width: 100%;
+  }
+  .milestones::after {
+    left: 18%;
   }
 }
 
