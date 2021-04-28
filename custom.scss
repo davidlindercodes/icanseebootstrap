@@ -8,6 +8,7 @@ $theme-colors: (
 );
 
 $gradient: linear-gradient(to bottom right, #3023ae, #c86dd7);
+$blue: #2579ff;
 
 html {
   font-family: Rubik !important;
@@ -117,6 +118,19 @@ p {
     text-align:left;
     margin-left:0
   }
+
+  .vl {
+  border-right: 2px solid #2579ff;
+  height: 50px;
+  position: absolute;
+  top: 0;
+}
+
+.event {
+  border-right: 2px solid #2579ff;
+  border-radius: 10px;
+}
+
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
