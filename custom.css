@@ -97,7 +97,11 @@ p {
 }
 
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.showMore:hover {
+  cursor: pointer;
 }
 
 .shortHr {
