@@ -33,6 +33,11 @@ p {
   font-size: 14px;
 }
 
+.tile {
+  background-color: white;
+  box-shadow: 5px 10px 20px #E5E7FF;
+}
+
 .alert {
   border-radius: 15px;
   height: 50%;
@@ -58,10 +63,6 @@ p {
 .stories img:hover {
   cursor: pointer;
 }
-
-// .card-header:hover {
-//     cursor: pointer;
-// }
 
 .hover:hover {
     cursor: pointer;
@@ -132,9 +133,8 @@ p {
   top: 0;
 }
 
-.event {
-  border-right: 2px solid #2579ff;
-  border-radius: 10px;
+.br-10 {
+  border-radius: 10px !important;
 }
 
 .imgBg {
