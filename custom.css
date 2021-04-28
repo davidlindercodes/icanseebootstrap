@@ -48,6 +48,10 @@ p {
   cursor: pointer;
 }
 
+.card-header:hover {
+  cursor: pointer;
+}
+
 .storyImg {
   padding: 5px;
   position: relative;
