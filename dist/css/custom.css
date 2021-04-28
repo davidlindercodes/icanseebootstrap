@@ -4,7 +4,7 @@ html {
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 35px;
 }
 
@@ -13,7 +13,7 @@ h2 {
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 p {
@@ -91,6 +91,7 @@ p {
 }
 
 .shortHr {
+  display: block;
   height: 1px;
   border: 0;
   border-top: 2px solid white;

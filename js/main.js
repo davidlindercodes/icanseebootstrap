@@ -6,3 +6,5 @@ doneBtn.addEventListener("click", hideAlert);
 function hideAlert() {
   alert.classList.add("hide");
 }
+
+
