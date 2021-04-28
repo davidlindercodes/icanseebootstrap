@@ -172,6 +172,16 @@ p {
   border-radius: 10px;
 }
 
+input#search {
+  background-image: url("img/plusCircle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #F1F5F8;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 25px;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

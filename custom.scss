@@ -143,6 +143,7 @@ p {
 
 .br-10 {
   border-radius: 10px !important;
+  
 }
 
 .imgBg {
@@ -191,6 +192,16 @@ p {
 .reminder {
   border-right: 5px solid #3023ae;
   border-radius: 10px;
+}
+
+input#search {
+    background-image: url('img/plusCircle.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #F1F5F8;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 25px;
 }
 
 @import "node_modules/bootstrap/scss/bootstrap";
