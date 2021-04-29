@@ -24,7 +24,7 @@ p {
 
 .tile {
   background-color: white;
-  box-shadow: 5px 10px 20px #E5E7FF;
+  box-shadow: 5px 10px 20px #e5e7ff;
 }
 
 .alert {
@@ -132,7 +132,7 @@ p {
 }
 
 .imgBg {
-  background-color: #F6F7FF;
+  background-color: #f6f7ff;
   border-radius: 50%;
   height: 50px;
   width: 50px;
@@ -163,7 +163,7 @@ p {
   content: "";
   position: absolute;
   width: 3px;
-  background-color: #F6F7FF;
+  background-color: #f6f7ff;
   top: 20%;
   bottom: 5%;
   left: 20%;
@@ -180,7 +180,7 @@ input#search {
   background-image: url("img/plusCircle.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: #F1F5F8;
+  background-color: #f1f5f8;
   background-repeat: no-repeat;
   background-position: right;
   border-radius: 25px;
@@ -195,6 +195,13 @@ input#search {
   .milestones::after {
     left: 34%;
   }
+
+  ::placeholder {
+    display: block;
+    font-size: 17px;
+    padding-top: auto;
+    padding-bottom: auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .seperator {
@@ -203,6 +210,27 @@ input#search {
 
   .milestones::after {
     left: 18%;
+  }
+}
+@media screen and (max-width: 467px) {
+  .milestones::after {
+    left: 26%;
+  }
+
+  ::placeholder {
+    font-size: 12px;
+    padding: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  #breadcumbs {
+    display: none !important;
+  }
+
+  #profile {
+    position: absolute;
+    top: 2px;
+    right: 20px;
   }
 }
 /*!

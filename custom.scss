@@ -10,7 +10,6 @@ $theme-colors: (
 $gradient: linear-gradient(to bottom right, #3023ae, #c86dd7);
 $blue: #2579ff;
 
-
 html {
   font-family: Rubik !important;
 }
@@ -33,10 +32,9 @@ p {
   font-size: 14px;
 }
 
-
 .tile {
   background-color: white;
-  box-shadow: 5px 10px 20px #E5E7FF;
+  box-shadow: 5px 10px 20px #e5e7ff;
 }
 
 .alert {
@@ -66,8 +64,8 @@ p {
 }
 
 .hover:hover {
-    cursor: pointer;
-    background: #f6f7ff;
+  cursor: pointer;
+  background: #f6f7ff;
 }
 
 .closeBtn:hover {
@@ -120,26 +118,27 @@ p {
   display: none !important;
 }
 
-.showMore:hover{
+.showMore:hover {
   cursor: pointer;
 }
 
-.showLess:hover{
+.showLess:hover {
   cursor: pointer;
 }
 
-.shortHr{ 
-  display: block; 
+.shortHr {
+  display: block;
   height: 1px;
-    border: 0; 
-    border-top: 2px solid white;
-    margin: 1em 0; padding: 0; 
-    width: 25%;
-    text-align:left;
-    margin-left:0
-  }
+  border: 0;
+  border-top: 2px solid white;
+  margin: 1em 0;
+  padding: 0;
+  width: 25%;
+  text-align: left;
+  margin-left: 0;
+}
 
-  .vl {
+.vl {
   border-right: 2px solid #2579ff;
   height: 50px;
   position: absolute;
@@ -148,50 +147,47 @@ p {
 
 .br-10 {
   border-radius: 10px !important;
-  
 }
 
 .imgBg {
-  background-color:#F6F7FF;
-  border-radius:50%; 
-  height: 50px; 
+  background-color: #f6f7ff;
+  border-radius: 50%;
+  height: 50px;
   width: 50px;
   text-align: center;
   z-index: 1;
-  :hover{
-  height: 55px; 
-  width: 55px;
-  animation: rotate 2s 1;
-  cursor: pointer;
-}
+  :hover {
+    height: 55px;
+    width: 55px;
+    animation: rotate 2s 1;
+    cursor: pointer;
+  }
 }
 
 @keyframes rotate {
-  100% {transform: rotate(360deg);}
-
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
-
 
 /* The timeline (the vertical ruler) */
 .milestones {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 
 /* The timeline (the vertical ruler) */
 .milestones::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 3px;
-  background-color: #F6F7FF;
+  background-color: #f6f7ff;
   top: 20%;
   bottom: 5%;
   left: 20%;
   margin-left: -3px;
-    z-index: 0;
+  z-index: 0;
 }
 
 .reminder {
@@ -200,40 +196,64 @@ p {
 }
 
 input#search {
-    background-image: url('img/plusCircle.png');
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-color: #F1F5F8;
-    background-repeat: no-repeat;
-    background-position: right;
-    border-radius: 25px;
+  background-image: url("img/plusCircle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f1f5f8;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 25px;
 }
 
 @media screen and (max-width: 1200px) {
-.milestones::after {
-  left: 24%;
-}
+  .milestones::after {
+    left: 24%;
+  }
 }
 
 @media screen and (max-width: 994px) {
-.milestones::after {
-  left: 34%;
-}
+  .milestones::after {
+    left: 34%;
+      }
+  ::placeholder {
+    display: block;
+    font-size: 17px;
+    padding-top: auto;
+    padding-bottom: auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .seperator {
-    width:100%;
+    width: 100%;
   }
   .milestones::after {
-  left: 18%;
+    left: 18%;
+  }
 }
+
+@media screen and (max-width: 467px) {
+  .milestones::after {
+    left: 26%;
+  }
+ ::placeholder {
+    font-size: 12px;
+    padding: auto;
+  }
 }
 
+@media screen and (max-width: 375px) {
+  #breadcumbs{
+    display: none !important;
+  }
 
+  #profile{
+    position: absolute; 
+    top: 2px; 
+    right: 20px
+  }
 
-
-
+}
 
 
 
