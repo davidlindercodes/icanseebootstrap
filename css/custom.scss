@@ -15,12 +15,14 @@ h1 {
   font-family: 'Rubik';
 	font-weight: 500  !important;
 	font-size: 35px !important;
+	color: black;
 }
 
 //used for date numbers only
 h2 {
    font-family: 'Rubik';
 	font-size: 28px !important;
+
 }
 
 //tile headers
@@ -267,6 +269,7 @@ input#search {
 
 
 @media screen and (max-width: 1200px) {
+
 }
 
 @media screen and (max-width: 994px) {
@@ -276,11 +279,18 @@ input#search {
 		padding-top: auto;
 		padding-bottom: auto;
 	}
+
+			.resImg {
+		height: 100px !important;
+	}
 }
 
 @media screen and (max-width: 768px) {
 	.seperator {
 		width: 100%;
+	}
+		.resImg {
+		height: 150px !important;
 	}
 }
 
@@ -289,6 +299,10 @@ input#search {
 	.modal-content {
 width:90vw !important;
 height:auto !important;
+	}
+
+		.resImg {
+		height: 75px !important;
 	}
 
 	.closeBtn {
@@ -301,10 +315,11 @@ height:auto !important;
 	}
 }
 
+
 @media screen and (max-width: 375px) {
 
 	.resImg {
-		height: 70px !important;
+		display: none !important;
 	}
 
 	.resTxt {

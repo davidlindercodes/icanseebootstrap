@@ -4,6 +4,7 @@ h1 {
   font-family: "Rubik";
   font-weight: 500 !important;
   font-size: 35px !important;
+  color: black;
 }
 
 h2 {
@@ -245,16 +246,28 @@ input#search {
     padding-top: auto;
     padding-bottom: auto;
   }
+
+  .resImg {
+    height: 100px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .seperator {
     width: 100%;
+  }
+
+  .resImg {
+    height: 150px !important;
   }
 }
 @media screen and (max-width: 467px) {
   .modal-content {
     width: 90vw !important;
     height: auto !important;
+  }
+
+  .resImg {
+    height: 75px !important;
   }
 
   .closeBtn {
@@ -268,7 +281,7 @@ input#search {
 }
 @media screen and (max-width: 375px) {
   .resImg {
-    height: 70px !important;
+    display: none !important;
   }
 
   .resTxt {
