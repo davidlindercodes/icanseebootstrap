@@ -1,23 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
-//  Contents 
+//  Contents
 
-// A. Global Settings  
-// B. Breadcrumbs and profile icon 
+// A. Global Settings
+// B. Breadcrumbs and profile icon
 // C. Absense Alert
 // D. Stories
-// E. Top cards 
-// F. Notifications 
-// G. Reminders 
-// H. Absensees 
+// E. Top cards
+// F. Notifications
+// G. Reminders
+// H. Absensees
 // I. Events
-// J. Milestones 
+// J. Milestones
 // K. Modals
-// 
-
+//
 
 //////////////////////////////
-//A. Global Settings 
+//A. Global Settings
 //////////////////////////////
 
 $theme-colors: (
@@ -30,37 +29,35 @@ $theme-colors: (
 $gradient: linear-gradient(to bottom right, #3023ae, #c86dd7);
 $blue: #2579ff;
 
-
 h1 {
-  font-family: 'Rubik';
-	font-weight: 500  !important;
+	font-family: "Rubik";
+	font-weight: 500 !important;
 	font-size: 35px !important;
 	color: black;
 }
 
-
 //used for date numbers only
 h2 {
-   font-family: 'Rubik';
+	font-family: "Rubik";
 	font-size: 28px !important;
 }
 
 //tile headers
 h3 {
-   font-family: 'Rubik';
+	font-family: "Rubik";
 	font-size: 16px !important;
 	color: black;
 }
 
 //item name
-h4  {
-   font-family: 'Rubik';
+h4 {
+	font-family: "Rubik";
 	font-size: 14px !important;
 }
 
 //item description
 p {
-   font-family: 'Rubik';
+	font-family: "Rubik";
 	font-weight: 400 !important;
 	font-size: 14px !important;
 	color: black;
@@ -96,10 +93,10 @@ p {
 }
 
 //////////////////////////////
-//B. Breadcrumbs and profile icon 
+//B. Breadcrumbs and profile icon
 //////////////////////////////
 
-	@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
 	#breadcumbs {
 		display: none !important;
 	}
@@ -119,11 +116,11 @@ p {
 	border-radius: 15px;
 	position: relative;
 	justify-content: space-between;
-    display: flex;
+	display: flex;
 }
 
 .doneBtn {
-	position: relative;;
+	position: relative;
 }
 
 //////////////////////////////
@@ -136,7 +133,7 @@ p {
 	border-radius: 50%;
 	height: 75px;
 	width: 75px;
-	margin: auto; 
+	margin: auto;
 }
 
 .stories p {
@@ -198,7 +195,7 @@ p {
 }
 
 //////////////////////////////
-//E. Top Cards 
+//E. Top Cards
 //////////////////////////////
 
 .shortHr {
@@ -214,18 +211,18 @@ p {
 }
 
 @media screen and (max-width: 994px) {
-			.resImg {
+	.resImg {
 		height: 100px !important;
 	}
 }
 @media screen and (max-width: 768px) {
-		.resImg {
+	.resImg {
 		height: 150px !important;
 	}
 }
 
 @media screen and (max-width: 467px) {
-		.resImg {
+	.resImg {
 		height: 75px !important;
 	}
 }
@@ -239,9 +236,8 @@ p {
 	}
 }
 
-
 //////////////////////////////
-//G. Reminder 
+//G. Reminder
 //////////////////////////////
 
 .reminder {
@@ -279,7 +275,6 @@ input#search {
 //I. Events
 //////////////////////////////
 
-
 .vl {
 	border-right: 2px solid #2579ff;
 	height: 50px;
@@ -287,7 +282,7 @@ input#search {
 }
 
 //////////////////////////////
-//J. Milestones 
+//J. Milestones
 //////////////////////////////
 
 .imgBg {
@@ -308,10 +303,8 @@ input#search {
 @keyframes rotate {
 	100% {
 		transform: rotate(360deg);
-	}git
+	}
 }
-
-
 
 /* The timeline (the vertical ruler) */
 .milestones::after {
@@ -349,23 +342,18 @@ input#search {
 	background: #653af6;
 }
 
-
-
 //////////////////////////////
 //K. Modals
 //////////////////////////////
 
 @media screen and (max-width: 467px) {
-
 	.modal-content {
-width:90vw !important;
-height:auto !important;
+		width: 90vw !important;
+		height: auto !important;
 	}
-		.closeBtn {
+	.closeBtn {
 		margin-right: 10px;
 	}
 }
-
-
 
 @import "../node_modules/bootstrap/scss/bootstrap";
