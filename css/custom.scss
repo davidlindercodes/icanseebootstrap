@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
+//  Contents 
+
+// A. Global Settings  
+// B. Breadcrumbs and profile icon 
+// C. Absense Alert
+// D. Stories
+// E. Top cards 
+// F. Notifications 
+// G. Reminders 
+// H. Absensees 
+// I. Events
+// J. Milestones 
+// K. Modals
+// 
+
+
+//////////////////////////////
+//A. Global Settings 
+//////////////////////////////
+
 $theme-colors: (
 	"blue": #2579ff,
 	"purple": #653af6,
@@ -18,11 +38,11 @@ h1 {
 	color: black;
 }
 
+
 //used for date numbers only
 h2 {
    font-family: 'Rubik';
 	font-size: 28px !important;
-
 }
 
 //tile headers
@@ -51,29 +71,12 @@ p {
 	box-shadow: 5px 10px 20px #e5e7ff;
 }
 
-.alert {
-	border-radius: 15px;
-	height: 50%;
-	background: red !important;
-	color: white;
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 10px;
-	perspective: 1px;
+.hide {
+	display: none !important;
 }
 
-.doneBtn {
-	position: relative;
-	cursor: pointer;
-	margin: -10px;
-}
-
-.center-block {
-	margin: -10px;
-}
-
-.stories img:hover {
+//regular pointer
+.pnt:hover {
 	cursor: pointer;
 }
 
@@ -82,18 +85,63 @@ p {
 	background: #f6f7ff;
 }
 
-.closeBtn:hover {
-	cursor: pointer;
+.br-10 {
+	border-radius: 10px !important;
 }
+
+@media screen and (max-width: 768px) {
+	.seperator {
+		width: 100%;
+	}
+}
+
+//////////////////////////////
+//B. Breadcrumbs and profile icon 
+//////////////////////////////
+
+	@media screen and (max-width: 375px) {
+	#breadcumbs {
+		display: none !important;
+	}
+
+	#profile {
+		position: absolute;
+		top: 2px;
+		right: 20px;
+	}
+}
+
+//////////////////////////////
+//C. Absense Alert
+//////////////////////////////
+
+.alert {
+	border-radius: 15px;
+	position: relative;
+	justify-content: space-between;
+    display: flex;
+}
+
+.doneBtn {
+	position: relative;;
+}
+
+//////////////////////////////
+//C. Stories
+//////////////////////////////
 
 .storyImg {
 	padding: 5px;
 	position: relative;
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+	margin: auto; 
 }
 
 .stories p {
-	margin-left: -15px;
-	margin-right: -15px;
+	margin-left: -25px;
+	margin-right: -25px;
 	padding-top: 10px;
 	text-align: center;
 }
@@ -128,17 +176,30 @@ p {
 	position: relative;
 }
 
-.hide {
-	display: none !important;
+.stories::-webkit-scrollbar {
+	height: 10px;
+}
+/* Track */
+.stories::-webkit-scrollbar-track {
+	background: #f6f7ff;
+	margin: 40px;
+	border-radius: 20px;
 }
 
-.showMore:hover {
-	cursor: pointer;
+/* Handle */
+.stories::-webkit-scrollbar-thumb {
+	background: #d1e4ff;
+	border-radius: 20px;
 }
 
-.showLess:hover {
-	cursor: pointer;
+/* Handle on hover */
+.stories::-webkit-scrollbar-thumb:hover {
+	background: #653af6;
 }
+
+//////////////////////////////
+//E. Top Cards 
+//////////////////////////////
 
 .shortHr {
 	display: block;
@@ -152,16 +213,82 @@ p {
 	margin-left: 0;
 }
 
+@media screen and (max-width: 994px) {
+			.resImg {
+		height: 100px !important;
+	}
+}
+@media screen and (max-width: 768px) {
+		.resImg {
+		height: 150px !important;
+	}
+}
+
+@media screen and (max-width: 467px) {
+		.resImg {
+		height: 75px !important;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.resImg {
+		display: none !important;
+	}
+	.resTxt {
+		width: 100% !important;
+	}
+}
+
+
+//////////////////////////////
+//G. Reminder 
+//////////////////////////////
+
+.reminder {
+	border-right: 5px solid #3023ae;
+	border-radius: 10px;
+}
+
+input#search {
+	background-image: url("img/plusCircle.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #f1f5f8;
+	background-repeat: no-repeat;
+	background-position: right;
+	border-radius: 25px;
+}
+
+@media screen and (max-width: 994px) {
+	::placeholder {
+		display: block;
+		font-size: 17px;
+		padding-top: auto;
+		padding-bottom: auto;
+	}
+}
+
+@media screen and (max-width: 467px) {
+	::placeholder {
+		font-size: 12px;
+		padding: auto;
+	}
+}
+
+//////////////////////////////
+//I. Events
+//////////////////////////////
+
+
 .vl {
 	border-right: 2px solid #2579ff;
 	height: 50px;
 	position: absolute;
-	top: 0;
 }
 
-.br-10 {
-	border-radius: 10px !important;
-}
+//////////////////////////////
+//J. Milestones 
+//////////////////////////////
 
 .imgBg {
 	background-color: #f6f7ff;
@@ -184,12 +311,7 @@ p {
 	}
 }
 
-/* The timeline (the vertical ruler) */
-.milestones {
-	position: relative;
-	max-width: 1200px;
-	margin: 0 auto;
-}
+
 
 /* The timeline (the vertical ruler) */
 .milestones::after {
@@ -204,44 +326,6 @@ p {
 	z-index: 0;
 	text-align: center;
 }
-
-.reminder {
-	border-right: 5px solid #3023ae;
-	border-radius: 10px;
-}
-
-input#search {
-	background-image: url("img/plusCircle.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-color: #f1f5f8;
-	background-repeat: no-repeat;
-	background-position: right;
-	border-radius: 25px;
-}
-
-
-.stories::-webkit-scrollbar {
-	height: 10px;
-}
-/* Track */
-.stories::-webkit-scrollbar-track {
-	background: #f6f7ff;
-	margin: 40px;
-	border-radius: 20px;
-}
-
-/* Handle */
-.stories::-webkit-scrollbar-thumb {
-	background: #d1e4ff;
-	border-radius: 20px;
-}
-
-/* Handle on hover */
-.stories::-webkit-scrollbar-thumb:hover {
-	background: #653af6;
-}
-
 
 //milestone custom scroll
 .milestones::-webkit-scrollbar {
@@ -267,32 +351,9 @@ input#search {
 
 
 
-
-@media screen and (max-width: 1200px) {
-
-}
-
-@media screen and (max-width: 994px) {
-	::placeholder {
-		display: block;
-		font-size: 17px;
-		padding-top: auto;
-		padding-bottom: auto;
-	}
-
-			.resImg {
-		height: 100px !important;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.seperator {
-		width: 100%;
-	}
-		.resImg {
-		height: 150px !important;
-	}
-}
+//////////////////////////////
+//K. Modals
+//////////////////////////////
 
 @media screen and (max-width: 467px) {
 
@@ -300,41 +361,11 @@ input#search {
 width:90vw !important;
 height:auto !important;
 	}
-
-		.resImg {
-		height: 75px !important;
-	}
-
-	.closeBtn {
+		.closeBtn {
 		margin-right: 10px;
 	}
-
-	::placeholder {
-		font-size: 12px;
-		padding: auto;
-	}
 }
 
 
-@media screen and (max-width: 375px) {
-
-	.resImg {
-		display: none !important;
-	}
-
-	.resTxt {
-		width: 100% !important;
-	}
-
-	#breadcumbs {
-		display: none !important;
-	}
-
-	#profile {
-		position: absolute;
-		top: 2px;
-		right: 20px;
-	}
-}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
