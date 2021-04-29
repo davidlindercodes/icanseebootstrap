@@ -174,6 +174,7 @@ p {
 .milestones {
   position: relative;
   max-width: 1200px;
+  height: 1800px;
   margin: 0 auto;
 }
 
@@ -184,7 +185,7 @@ p {
   width: 3px;
   background-color: #f6f7ff;
   top: 20%;
-  bottom: 5%;
+  bottom: -52%;
   left: 20%;
   margin-left: -3px;
   z-index: 0;
@@ -204,6 +205,33 @@ input#search {
   background-position: right;
   border-radius: 25px;
 }
+
+
+.milestones::-webkit-scrollbar {
+  width: 10px;
+  }
+/* Track */
+.milestones::-webkit-scrollbar-track {
+ background: #f6f7ff;
+  margin: 40px;
+  border-radius: 20px; 
+}
+ 
+/* Handle */
+.milestones::-webkit-scrollbar-thumb {
+  background: #D1E4FF; 
+    border-radius: 20px; 
+}
+
+
+/* Handle on hover */
+.milestones::-webkit-scrollbar-thumb:hover {
+  background: #653af6; 
+}
+
+
+
+
 
 @media screen and (max-width: 1200px) {
   .milestones::after {
