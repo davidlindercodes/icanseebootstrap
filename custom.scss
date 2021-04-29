@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+EAN13+Text&display=swap');
+
+
+
 
 $theme-colors: (
 	"blue": #2579ff,
@@ -10,26 +14,27 @@ $theme-colors: (
 $gradient: linear-gradient(to bottom right, #3023ae, #c86dd7);
 $blue: #2579ff;
 
-html {
-	font-family: Rubik !important;
-}
 
 h1 {
-	font-weight: 500;
-	font-size: 35px;
+  font-family: 'Rubik';
+	font-weight: 500 ;
+	font-size: 35px ;
 }
 
 h2 {
-	font-size: 16px;
+   font-family: 'Rubik';
+	font-size: 16px !important;
 }
 
 h3 {
+   font-family: 'Rubik';
 	font-size: 14px !important;
 }
 
 p {
-	font-weight: 400;
-	font-size: 14px;
+   font-family: 'Rubik';
+	font-weight: 400 !important;
+	font-size: 14px !important;
 }
 
 .tile {
