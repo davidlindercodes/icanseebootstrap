@@ -2,7 +2,7 @@
 
 :sparkles: A simple bootstrap mock up page. :sparkles:
 
-## Functionality 
+## Functionality  🔨 
 
 Some funcitonality has been added:
 The 'show more' option at the bottom the notification tile, 
@@ -16,7 +16,7 @@ The accordian in the notifications section works as expected.
 
 I added some animations to the milestones - I think they are a bit overwhelming for the page design, but I kep them anyway, just to add micro interactions. I think it fitting to <b>this</b> project, but wouldn't neccesary use for a production project. 
 
-# Demo 
+# Demo 👓
 
 This production is now live and can be viewed [here](https://icanseebootstrap.vercel.app/).
 
