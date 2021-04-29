@@ -17,20 +17,29 @@ $blue: #2579ff;
 
 h1 {
   font-family: 'Rubik';
-	font-weight: 500 ;
-	font-size: 35px ;
+	font-weight: 500  !important;
+	font-size: 35px !important;
 }
 
+//used for date numbers only
 h2 {
+   font-family: 'Rubik';
+	font-size: 28px !important;
+}
+
+//tile headers
+h3 {
    font-family: 'Rubik';
 	font-size: 16px !important;
 }
 
-h3 {
+//item name
+h4  {
    font-family: 'Rubik';
 	font-size: 14px !important;
 }
 
+//item description
 p {
    font-family: 'Rubik';
 	font-weight: 400 !important;
