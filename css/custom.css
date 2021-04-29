@@ -14,6 +14,7 @@ h2 {
 h3 {
   font-family: "Rubik";
   font-size: 16px !important;
+  color: black;
 }
 
 h4 {
@@ -25,6 +26,7 @@ p {
   font-family: "Rubik";
   font-weight: 400 !important;
   font-size: 14px !important;
+  color: black;
 }
 
 .tile {
@@ -250,6 +252,15 @@ input#search {
   }
 }
 @media screen and (max-width: 467px) {
+  .modal-content {
+    width: 90vw !important;
+    height: auto !important;
+  }
+
+  .closeBtn {
+    margin-right: 10px;
+  }
+
   ::placeholder {
     font-size: 12px;
     padding: auto;

@@ -1,3 +1,18 @@
+<!-- Contents 
+
+A. Breadcrumbs and profile icon 
+B. Absense Alert
+C. Stories
+D. Top cards 
+E. Notifications 
+F. Reminders 
+G. Absensees 
+H. Events
+I. Milestones 
+J. Modals
+
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -9,7 +24,11 @@
       <link rel="shortcut icon" type="image/jpg" href="img\480px-Bootstrap_logo.svg.png"/>
    </head>
    <header class="bg-white">
-      <!-- Breadcrumbs section -->
+<!-- 
+  /////////////////////////////////
+  A. Breadcrumbs and profile icon 
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
       <nav
          class="container-fluid align-center d-flex justify-content-between"
          style="height: 50px; overflow: hidden"
@@ -38,15 +57,19 @@
             />
       </nav>
       <hr class="mt-0" />
-      <!-- Absense alert  -->
-      <div class="container">
-      <section class="alert container bg-danger">
-         <p class="center-block mr-1">
+<!-- 
+  /////////////////////////////////
+  B. Absense Alert
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
+      <div class="container text-white">
+      <section class="alert container bg-danger ">
+         <p class="center-block mr-1 text-white">
             Unauthorised absence! ⏰
             <b>Laura Pearson has failed to notify todays absense,</b> call employee
             and report to HR
          </p>
-         <p onclick="hideAlert()" class="doneBtn ml-1" style="color: white">
+         <p onclick="hideAlert()" class="doneBtn ml-1 text-white">
             <img src="img/check.svg" /><b> Okay</b>
          </p>
 
@@ -54,7 +77,11 @@
       </div>
       <h1 class="container">Noticeboard</h1>
       <br />
-      <!-- Stories -->
+<!-- 
+  /////////////////////////////////
+  C. Stories 
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
       <div class="container p-4">
       <section class="stories pb-1" style="overflow: auto;">
       <div
@@ -112,11 +139,14 @@
       </section>
       </div>
    </header>
-   <!-- **END OF HEADER**
-      **START OF MAIN BODY** -->
    <body class="bg-light">
-      <!-- The two notification cards at the top -->
-      <div class="container text-white">
+           <div class="container text-white">
+<!-- 
+  /////////////////////////////////
+  D. Top Cards 
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
+      <div class="container">
          <div class="row">
             <div class="col m-3 bg-blue" style="height: 220px">
                <img
@@ -124,10 +154,10 @@
                   class="position-absolute resImg"
                   style="height: 110px; top: 0; right: 0"
                   />
-               <p class="mt-4 mb-0">You've unlocked 100s of</p>
+               <p class="mt-4 mb-0 r text-white">You've unlocked 100s of</p>
                <h1>Benefits</h1>
                <hr class="shortHr" />
-               <p class="resTxt" style="width: 60%">
+               <p class="resTxt r text-white" style="width: 60%">
                   Check out your latest offers and discounts. Go on, treat yourself!
                </p>
             </div>
@@ -138,10 +168,10 @@
                   class="position-absolute resImg"
                   style="height: 110px; top: 0; right: 0"
                   />
-               <p class="mt-4 mb-0">You're going on holiday in</p>
+               <p class="mt-4 mb-0 r text-white">You're going on holiday in</p>
                <h1>2 days</h1>
                <hr class="shortHr" />
-               <p class="resTxt" style="width: 60%">
+               <p class="resTxt r text-white" style="width: 60%">
                   Whether it's a city break, rural ramble or duvet day - kick back and
                   relax.
                </p>
@@ -151,12 +181,15 @@
       <section class="container mb-5" id="mainDashboardSection">
       <div class="row">
       <div class="col-md-7 position-relative" id="left">
-            <!-- accordian  -->
-            <!-- card 1 -->
+<!-- 
+  /////////////////////////////////
+E. Notifications
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
             <div class="tile accordion col-md-12 p-4"  id="accordion">
-              <h3>Notifications</h3>
+              <h3 class="text-dark">Notifications</h3>
                
-              
+              <!-- Notification card 1 -->
               <div class="card border border-blue br-10 mt-4 bg-light" onclick="changeChevron1()">
                      <div class="card-header hover bg-light" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <div class="row">
@@ -172,11 +205,12 @@
 
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" >   
                        <div class="card-body bg-white">
-                    Thanks for helping out      
+                         <p>Thanks for helping out  </p>
+                    
                   </div>
                   </div>
                </div>
-               <!-- card 2 -->
+               <!--Notification card 2 -->
               
                   <div class="card mt-3 border border-blue br-10 bg-light" onclick="changeChevron2()">
                      <div class="card-header hover mt-2 bg-light"  id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
@@ -193,12 +227,12 @@
 
                      <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" >
                            <div class="card-body bg-white">
-                      Enjoy your time off! But first, fill out this handy handover form and keep everyone up-to-date.     
+                     <p> Enjoy your time off! But first, fill out this handy handover form and keep everyone up-to-date. </p> 
                      </div>
                     </div>
                   </div>
                
-               <!-- card 3 -->
+               <!--Notification card 3 -->
 
                   <div class="card mt-3 border border-blue br-10 bg-light" onclick="changeChevron3()">
                      <div class="card-header hover mt-2 bg-light"  id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
@@ -214,12 +248,12 @@
                      </div>
                      <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" >
                            <div class=" card-body bg-white">
-                      You're already 70% of the way - finish your preparation by completing your apprasal form. 
+                      <p>You're already 70% of the way - finish your preparation by completing your apprasal form. </p>
                      </div>
                     </div>
                   </div>
                
-               <!-- card 4 -->
+               <!--Notification card 4 -->
                <div class="card mt-3 border border-blue br-10 bg-light" onclick="changeChevron4()" >
                      <div class="card-header hover mt-2 bg-light"  id="headingFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                         <div class="row">
@@ -234,11 +268,11 @@
                      </div>
                   <div id="collapseFour" class="collapse" aria-labelledby="headingOne" >
 <div class="card-body show bg-white">
-                        You're already 70% of the way - finish your profile by uploading a photo
+                       <p> You're already 70% of the way - finish your profile by uploading a photo</p>
 </div>
                   </div>
                </div>
-               <!-- card 5 -->
+               <!--Notification card 5 -->
                <div class="card mt-3 border border-blue br-10 bg-light" onclick="changeChevron5()">
                  
                      <div class="card-header hover mt-2 bg-light"  id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
@@ -255,11 +289,11 @@
                   
                   <div id="collapseFive" class="collapse " aria-labelledby="headingOne" >
                      <div class="card-body bg-white">
-                        Be sure you use them before April 3rd 2021 
+                       <p> Be sure you use them before April 3rd 2021 </p>
                      </div>
                   </div>
                </div>
-               <!-- card 6 -->
+               <!--Notification card 6 -->
                <div class="more hide">
                   <div class="card mt-3 border border-blue br-10 bg-light " onclick="changeChevron6()">
                   
@@ -279,7 +313,7 @@
                      
                      <div id="collapseSix" class="collapse " aria-labelledby="headingOne" >
                         <div class="card-body bg-white">
-                           You wont regret it 
+                          <p> You wont regret it </p>
                         </div>
                   </div>
                </div>
@@ -288,11 +322,13 @@
                <p class="showLess text-blue hide" id="showLess" onclick="showLess()" ><b>Show Less</b></p>
                <p class="showMore text-blue" id="showMore" onclick="showMore()" ><b>Show More</b></p>
          </div>
-         <!-- end accordian 
-            ------------------
-            start notification section -->
+<!-- 
+  /////////////////////////////////
+F. Reminders
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
          <div class="tile p-4 mt-4 position-relative mb-4" id="reminders" >
-            <h3>Remind me</h3>
+            <h3 class="text-dark">Remind me</h3>
             <input class="form-control form-control-lg mt-4 mb-3" type="text" id="search" placeholder="What do you want to remember?">
             <!-- reminder #1 -->
             <div class="reminderOne" onclick="hideReminder1()">
@@ -323,14 +359,21 @@
                </div>
             </div>
          </div>
-         <!-- end reminder section -->
       </div>
-      <!-- End right row -->
-      <div class='seperator'></div>
-      <!-- right row  -->
+            <div class='seperator'></div>
+      <!-- End of right row -->
+
+      <!-- Start of left right row  -->
       <div class="col-md-5" id="right">
-      <!-- absenses section row  -->      
-      <div class="bg-white p-4 position-relative">
+
+
+
+  <!-- 
+  /////////////////////////////////
+G. Absensees
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->  
+      <div class="tile bg-white p-4 position-relative">
          <h3>Who's out of the office?</h3>
          <div class=" pl-4 pt-4 row">
             <img
@@ -354,7 +397,11 @@
             <p class="pl-3 pt-2"><b>Heather Ross</b><br>Annual Leave</p>
          </div>
       </div>
-      <!-- Events section -->
+<!-- 
+  /////////////////////////////////
+  h. Events
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
       <div class="tile p-4 mt-4 position-relative pb-0" id="milestones" >
          <h3>Upcoming Events </h3>
          <!-- event 1 -->
@@ -371,7 +418,7 @@
                </div>
             </div>
            </div> 
-         <!-- end of event 1 -->
+
          <!-- event 2 -->
          <div id="event2">
             <div class="row position-relative border border-blue mt-2 br-10 hover" style="align-items: center;">
@@ -386,7 +433,7 @@
                </div>
             </div>
          </div>
-         <!-- end of event 2 -->
+
          <!-- event 3 -->
          <div id="event3">
             <div class="row position-relative border border-blue mt-2 br-10 d-flex hover" style="align-items: center" data-toggle="modal" data-target="#eventModal">
@@ -401,17 +448,16 @@
                </div>
             </div>
          </div>
-         <!-- end of event 3 -->
       </div>
-      <!-- End of events section  -->
-      <!-- Milestones section  -->
+<!-- 
+  /////////////////////////////////
+  I. Milestones
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
       <div class="tile mt-4 pr-2 position-relative" >
          <section class=" milestones p-4" style="height: 520px; overflow: auto;">
             <h3>My Milestones</h3>
             <!-- Milestone 1 -->
-            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-               Launch demo modal
-               </button> -->
             <div class="container row mt-4 ml-2">
                <img class="position-absolute" style="height:65px; left:10px" src="img\milestone_bg@2x.webp"> 
                <div class="imgBg" data-toggle="modal" data-target="#storyModal"> <img src="img\baloon.svg" class="pt-2"></div>
@@ -478,26 +524,38 @@
             </div>
          </section>
       </div>
-      <!-- End of milestone section  -->
+
+
+
+<!-- 
+  /////////////////////////////////
+  J. Modals  
+  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ -->
+
       <!-- Modal Anniversary -->
       <div class="modal fade" id="storyModal" tabindex="-1" role="dialog" aria-labelledby="storyModal" aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content bg-purple text-center" style="height:450px; width:450px" >
                <div class="modal-body">
+                 <div class=row>
                   <img src="img\close.svg" class=" position-absolute closeBtn mb-3" style="top:20px; right:20px"; data-dismiss="modal" aria-label="Close">
-                  <img src="img\anniversary_header@2x.png" class="mt-3" style="height:150px" ; > 
+                  <img src="img\anniversary_header@2x.png" class="mt-3 img-fluid"; > 
+                  </div>
                   <br>
+                  
                   <h1 class="text-white mt-2">Happy Work<br> Anniversary Laura!</h1>
+                  
                   <p class="text-white">Congrations! You've been with us <b>5 years.<br>Thank you for being part of our company's <br>success.</b></p>
                   <div class=" d-flex justify-content-center m-auto" >
-                     <div class="br-10 text-white bg-dark pl-2 pr-2" style="height:30px" >
-                        <p  class="pt-1">👏 15</p>
+                     <div class="br-10 bg-dark pl-2 pr-2" style="height:30px" >
+                        <p  class="pt-1 text-white">👏 15</p>
                      </div>
-                     <div class="br-10 text-white bg-dark pl-2 pr-2 ml-2" style="height:30px">
-                        <p class="pt-1">🎉 5</p>
+                     <div class="br-10 bg-dark pl-2 pr-2 ml-2" style="height:30px">
+                        <p class="pt-1 text-white">🎉 5</p>
                      </div>
-                     <div class="br-10 text-white bg-dark pl-2 pr-2 ml-2" style="height:30px">
-                        <p class="pt-1">💃 3</p>
+                     <div class="br-10 bg-dark pl-2 pr-2 ml-2" style="height:30px">
+                        <p class="pt-1 text-white">💃 3</p>
                      </div>
                   </div>
                </div>
@@ -510,7 +568,7 @@
             <div class="modal-content bg-white text-center" style="height:450px; width:450px" >
                <div class="modal-body">
                   <img src="img\close_black.svg" class=" position-absolute closeBtn" style="top:20px; right:20px"; data-dismiss="modal" aria-label="Close">
-                  <img src="img\tournament_header@2x.png" class="mb-3" style="height:150px" ; > 
+                  <img src="img\tournament_header@2x.png" class="mb-3 img-fluid"; > 
                   <h1 >Charity Football<br>Tournament</h1>
                   <p>📅 03/03/2020 ⏰ 2.00pm - 4.00pm </p>
                   <h3><b> @Darwen F.C</b></h3>
