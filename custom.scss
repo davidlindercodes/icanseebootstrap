@@ -230,6 +230,7 @@ input#search {
   .milestones::after {
     left: 18%;
   }
+
 }
 
 @media screen and (max-width: 467px) {
@@ -243,6 +244,14 @@ input#search {
 }
 
 @media screen and (max-width: 375px) {
+  .resImg{
+    height: 70px !important;
+  }
+
+  .resTxt{
+    width: 100% !important;
+  }
+
   #breadcumbs{
     display: none !important;
   }
@@ -252,7 +261,6 @@ input#search {
     top: 2px; 
     right: 20px
   }
-
 }
 
 

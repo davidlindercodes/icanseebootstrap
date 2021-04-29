@@ -223,6 +223,14 @@ input#search {
   }
 }
 @media screen and (max-width: 375px) {
+  .resImg {
+    height: 70px !important;
+  }
+
+  .resTxt {
+    width: 100% !important;
+  }
+
   #breadcumbs {
     display: none !important;
   }
