@@ -187,6 +187,29 @@ input#search {
   border-radius: 25px;
 }
 
+.stories::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track */
+.stories::-webkit-scrollbar-track {
+  background: #f6f7ff;
+  margin: 40px;
+  border-radius: 20px;
+  padding-bottom: 50px;
+}
+
+/* Handle */
+.stories::-webkit-scrollbar-thumb {
+  background: #d1e4ff;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+.stories::-webkit-scrollbar-thumb:hover {
+  background: #653af6;
+}
+
 .milestones::-webkit-scrollbar {
   width: 10px;
 }
@@ -200,7 +223,7 @@ input#search {
 
 /* Handle */
 .milestones::-webkit-scrollbar-thumb {
-  background: #D1E4FF;
+  background: #d1e4ff;
   border-radius: 20px;
 }
 

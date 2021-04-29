@@ -206,17 +206,41 @@ input#search {
 	border-radius: 25px;
 }
 
-.milestones::-webkit-scrollbar {
-	width: 10px;
+
+.stories::-webkit-scrollbar {
+	height: 10px;
 }
 /* Track */
-.milestones::-webkit-scrollbar-track {
+.stories::-webkit-scrollbar-track {
 	background: #f6f7ff;
 	margin: 40px;
 	border-radius: 20px;
 }
 
 /* Handle */
+.stories::-webkit-scrollbar-thumb {
+	background: #d1e4ff;
+	border-radius: 20px;
+}
+
+/* Handle on hover */
+.stories::-webkit-scrollbar-thumb:hover {
+	background: #653af6;
+}
+
+
+//milestone custom scroll
+.milestones::-webkit-scrollbar {
+	width: 10px;
+}
+/*Scroll bar Track */
+.milestones::-webkit-scrollbar-track {
+	background: #f6f7ff;
+	margin: 40px;
+	border-radius: 20px;
+}
+
+/*Scroll Handle */
 .milestones::-webkit-scrollbar-thumb {
 	background: #d1e4ff;
 	border-radius: 20px;
@@ -226,6 +250,9 @@ input#search {
 .milestones::-webkit-scrollbar-thumb:hover {
 	background: #653af6;
 }
+
+
+
 
 @media screen and (max-width: 1200px) {
 	.milestones::after {
