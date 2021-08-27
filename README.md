@@ -8,7 +8,7 @@ Some funcitonality has been added:
 The 'show more' option at the bottom the notification tile, 
 does indeed show more notifications. 
 
-For the reminder section, the cards that be hidden, but ther than removing the pre-set cards, the remind me section does not have any funationality. 
+For the reminder section, the cards can be hidden, but other than removing the pre-set cards, the remindersection does not have any funationality. 
 
 There is only two modals active as requested, the 5 year anversary milstone modal and the charity football tournament modal. 
 
